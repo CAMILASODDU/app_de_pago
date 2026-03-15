@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tienda Cami</h1>
+        <div class="cart">🛒 <span id="contador">0</span></div>
+    </header>
+
+    <section class="catalogo">
+
+        <div class="producto">
+            <h3>Sticker</h3>
+            <p>$1</p>
+            <button onclick="agregar('Sticker')">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <h3>Lapicera</h3>
+            <p>$1</p>
+            <button onclick="agregar('Lapicera')">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <h3>Cuaderno</h3>
+            <p>$1</p>
+            <button onclick="agregar('Cuaderno')">Agregar</button>
+        </div>
+
+    </section>
+
+    <section class="carrito">
+
+        <h2>Carrito</h2>
+
+        <div id="lista"></div>
+
+        <h3 id="total"></h3>
+
+        <button onclick="pagar()" class="pagar">
+            Pagar con Mercado Pago
+        </button>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
