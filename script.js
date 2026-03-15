@@ -33,7 +33,7 @@ async function pagar() {
         return
     }
 
-    const res = await fetch("/crear-pago", {
+    const res = await fetch("https://app-de-pago.onrender.com/crear-pago", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
